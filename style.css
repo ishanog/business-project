@@ -1,0 +1,433 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: black;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+header {
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+header h1 {
+	margin: 0;
+	color: gray;
+	text-decoration: none;
+}
+
+header nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+header nav li {
+	margin: 0 1rem;
+}
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+}
+
+nav ul li a:hover {
+	color: #f2f2f2;
+}
+
+.sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+}
+
+#menu-divider {
+	border-top: 1px solid #ddd;
+	margin-top: 10px;
+}
+
+
+/* -------Head------- */
+
+.top {
+	background-image: url('bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	color: #fff;
+}
+
+.top h1{
+    font-size: 50px;
+    color: white;
+}
+
+.top p{
+    font-size: 25px;
+    color: white;
+}
+
+.btnH{
+	background-color: transparent;
+	box-shadow: 2px 2px 5px white;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.btnH:hover {
+	background-color: white;
+	color: black;
+}
+
+/* -------First/Top------- */
+
+.btn {
+	background-color: transparent;
+	box-shadow: 2px 2px 5px white;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+}
+
+
+main {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.text {
+	margin-top: 230px;
+	flex-basis: 60%;
+    height: 80vh;
+    text-align: center;
+	color: white;
+}
+
+
+.text h1 span {
+	color: white;
+    font-size: 70px;
+}
+
+.text h1 {
+    font-size: 60px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.home-col-1 {
+	flex-basis: 60%;
+	margin-top: 20px;
+}
+
+.home-col-2 img {
+	width: 100%;
+	border-radius: 15px;
+	margin-top: 60px;
+}
+
+.home-col-2 {
+	flex-basis: 35%;
+}
+
+.btnS {
+	background-color: transparent;
+	box-shadow: 2px 2px 5px white;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.btnS:hover {
+	background-color: white;
+	color: black;
+}
+
+/* ------- second/category------- */
+
+
+.title h1{
+	color: white;
+	text-align: center;
+}
+.product {
+	background-color: transparent;
+	border: 2px solid white;
+	margin: 3rem;
+	padding: 2rem;
+	width: 25%;
+	text-align: center;
+
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.product h3 {
+	margin: 0;
+	color: white;
+}
+
+.product p {
+	margin: 1rem 0;
+	color: white;
+}
+
+.product img {
+	width: 200px;
+	height: 250px;
+	/* border: 3px solid lightgreen;
+	box-shadow: 2px 2px 4px blue; */
+}
+
+.producth1{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.btnp {
+	background-color: transparent;
+	box-shadow: 2px 2px 5px white;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.btnp:hover {
+	background-color: white;
+	color: black;
+}
+
+/* -------product------- */
+
+
+.about {
+	margin-top: 10%;
+	height: 80vh;
+}
+
+.about-col-1 {
+	flex-basis: 31%;
+	margin-left: 70px;
+}
+
+.about-col-1 img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.about-col-2 {
+	flex-basis: 60%;
+}
+
+.sub-title {
+	font-size: 60px;
+	font-weight: 600;
+	color: white;
+}
+
+.about p {
+	color: white;
+	text-align: justify;
+    font-size: 20px;
+    width: 88%;
+}
+
+/* -------About------- */
+
+.contact {
+	margin-top: 10vh;
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: white;
+}
+
+.contact p {
+	margin-top: 30px;
+	color: white;
+}
+
+.contact p i {
+	margin-right: 15px;
+	font-size: 20px;
+	color: white;
+}
+
+.social_icon {
+	margin-top: 30px;
+}
+
+.social_icon a {
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	margin-right: 15px;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+.social_icon a:hover {
+	color: black;
+	transform: translateY(-5px);
+}
+
+.contact h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: white;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 11px;
+	color: green;
+	align-items: stretch;
+}
+
+.contact label {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+	padding: 10px;
+	border: 2px solid #333;
+	border-radius: 5px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+	outline: none;
+	border-color: blueviolet;
+}
+
+.contact button {
+	background-color: transparent;
+	box-shadow: 2px 2px 5px white;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 20px;
+	align-self: flex-end;
+}
+
+.contact button:hover {
+	background-color: white;
+	color: black;
+}
+
+/* -------contact------- */
+
+
+#team {
+	padding: 20px;
+	text-align: center;
+	height: 100vh;
+}
+
+#team ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+#team li {
+	text-align: center;
+	width: 300px;
+	margin: 0 20px;
+}
+
+#team h3 {
+	margin-top: 40px;
+	color: blueviolet;
+}
+
+#team img {
+	width: 200px;
+	height: 170px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+}
+
+footer a {
+	color: #333;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+#msg {
+	color: red;
+	margin-top: -10px;
+	display: block;
+}
