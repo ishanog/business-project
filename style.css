@@ -7,7 +7,7 @@
 
 body {
 	background-color: black;
-	font-family: Arial, sans-serif;
+	font-family: DIN Neuzeit Grotesk;
 	font-size: 16px;
 	line-height: 1.5;
 }
@@ -24,6 +24,8 @@ header h1 {
 	margin: 0;
 	color: gray;
 	text-decoration: none;
+	font-family: DIN Neuzeit Grotesk;
+	font-size: 30px;
 }
 
 header nav ul {
@@ -31,7 +33,7 @@ header nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	/* font-family: Georgia, 'Times New Roman', Times, serif; */
+	font-family: DIN Neuzeit Grotesk;
 }
 
 header nav li {
@@ -41,6 +43,7 @@ header nav li {
 header nav a {
 	text-decoration: none;
 	color: gray;
+	font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -295,6 +298,7 @@ main {
 .contact p {
 	margin-top: 30px;
 	color: white;
+	font-size: 25px;
 }
 
 .contact p i {
@@ -375,51 +379,67 @@ main {
 
 /* -------contact------- */
 
-
-#team {
-	padding: 20px;
-	text-align: center;
-	height: 100vh;
+.tecon {
+	background: black;
+	background-size: cover;
+	background-blend-mode: darken;
 }
 
-#team ul {
+.tecon-box {
 	display: flex;
 	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+	align-items: center;
+	color: black;
+	margin: auto;
+}
+
+
+#fourtpart {
+	text-align: center;
+}
+
+.thirdpart {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	padding: 8px 20px;
+	margin: 7px 3px;
+	border: 2px solid black;
+	border-radius: 8px;
+	background: black;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.body-2 {
+	font-size: 20px;
+	color: white;
+	margin-top: 10%;
+}
+
+.thirdpart h1{
 	color: white;
 }
 
-#team li {
-	text-align: center;
-	width: 300px;
-	margin: 0 20px;
-}
-
-#team h3 {
-	margin-top: 40px;
-	color: blueviolet;
-}
-
-#team img {
-	width: 200px;
-	height: 170px;
-	border-radius: 50%;
-	margin-top: 20px;
+.thirdpart p{
+	color: white;
 }
 
 footer {
-	background-color: #f2f2f2;
+	background-color: black;
 	padding: 20px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 20px;
 	margin-top: 50px;
 }
 
 footer a {
-	color: #333;
+	color: gray;
 	text-decoration: none;
+}
+
+footer p{
+	color: white;
 }
 
 footer a:hover {
