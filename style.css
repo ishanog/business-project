@@ -290,7 +290,7 @@ main {
 	height: 50vh;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
+	
 	justify-content: space-evenly;
 	color: white;
 }
@@ -450,4 +450,88 @@ footer a:hover {
 	color: red;
 	margin-top: -10px;
 	display: block;
+}
+
+@media (max-width: 1140px) {
+	.top h1{
+		font-size: 70px;
+	}
+
+	.top p{
+		font-size: 40px;
+	}
+
+	.btnH{
+		font-size: 30px;
+	}
+
+	.text{
+		text-align: center;
+		height: auto;
+	}
+
+	.text h1{
+		font-size: 100px;
+	}
+
+	.text h1 span{
+		font-size: 120px;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	
+	.home-col-1 {
+		flex-basis: 100%;
+	}
+	
+	.home-col-2 img {
+		width: 100%;
+		border-radius: 15px;
+	}
+	
+	.home-col-2 {
+		flex-basis: 100%;
+	}
+
+	.title h1{
+		margin-top: 10%;
+	}
+
+	.product{
+		width: 100%;
+	}
+
+	.about-col-1{
+		flex-basis: 100%;
+		margin-left: 0%;
+	}
+
+	.about-col-2{
+		flex-basis: 100%;
+		margin-left: 5%;
+	}
+
+	.about p{
+		font-size: 40px;
+	}
+	.contact{
+		margin-top: 0%;
+		flex-direction: column;
+	}
+
+	.disc{
+		text-align: center;
+	}
+
+	.disc h2{
+		font-size: 70px;
+	}
+
+	/* .contact form{
+		flex-basis: 70%;
+	} */
 }
